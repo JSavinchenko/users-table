@@ -44,11 +44,13 @@ export const Table = () => {
     <StyledTableContainer>
       <StyledTable cellSpacing='0' cellPadding='0'>
         <StyledTableHeader>
-          {headers.map(({name}) => (
-            <th key={name}>
-              <Text type={TextStyles.TABLE_HEADER}>{name}</Text>
-            </th>
-          ))}
+          <tr>
+            {headers.map(({name}) => (
+              <th key={name}>
+                <Text type={TextStyles.TABLE_HEADER}>{name}</Text>
+              </th>
+            ))}
+          </tr>
         </StyledTableHeader>
         <StyledTableBody>
           {usersWithTodoCount.map(

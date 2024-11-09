@@ -1,6 +1,5 @@
 import type {ReactNode} from 'react';
 import type {CSSProperties} from 'styled-components';
-//import {Breakpoints} from '../../constants/breakpoints';
 
 export enum TextFonts {
   INTER = 'Inter, sans-serif',
@@ -33,5 +32,4 @@ export interface TextProps {
   textAlign?: CSSProperties['textAlign'];
   textDecoration?: CSSProperties['textDecoration'];
   mobileType?: TextStyles;
-  //mobileBreakpoint?: Breakpoints;
 }

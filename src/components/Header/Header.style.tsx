@@ -7,4 +7,10 @@ export const StyledHeader = styled.header`
   padding-inline: 80px;
   padding-block: 60px 50px;
   white-space: nowrap;
+
+  @media (max-width: 604px) {
+    padding-inline: 40px;
+    padding-block: 60px 30px;
+    gap: 0px;
+  }
 `;

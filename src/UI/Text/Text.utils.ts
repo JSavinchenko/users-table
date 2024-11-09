@@ -13,6 +13,10 @@ export const getTextStyles = (type: TextStyles) => {
           Inter Display,
           sans-serif;
         color: rgba(255, 255, 255, 1);
+
+        @media (max-width: 604px) {
+          font-size: 24px;
+        }
       `;
     case TextStyles.SMALL_HEADER:
       return css`
@@ -22,6 +26,10 @@ export const getTextStyles = (type: TextStyles) => {
         letter-spacing: 1px;
         font-family: Inter, sans-serif;
         color: rgba(255, 255, 255, 0.3);
+
+        @media (max-width: 604px) {
+          font-size: 12px;
+        }
       `;
     case TextStyles.TABLE_HEADER:
       return css`
@@ -31,6 +39,10 @@ export const getTextStyles = (type: TextStyles) => {
         letter-spacing: 1px;
         font-family: Inter, sans-serif;
         color: rgba(255, 255, 255, 0.3);
+
+        @media (max-width: 604px) {
+          font-size: 8px;
+        }
       `;
     case TextStyles.TABLE_MAIN:
       return css`
@@ -40,6 +52,10 @@ export const getTextStyles = (type: TextStyles) => {
         letter-spacing: 0;
         font-family: Inter, sans-serif;
         color: rgba(255, 255, 255, 1);
+
+        @media (max-width: 604px) {
+          font-size: 12px;
+        }
       `;
     case TextStyles.SMALL:
       return css`
@@ -49,6 +65,10 @@ export const getTextStyles = (type: TextStyles) => {
         letter-spacing: 0;
         font-family: Inter, sans-serif;
         color: rgba(255, 255, 255, 0.4);
+
+        @media (max-width: 604px) {
+          font-size: 10px;
+        }
       `;
     default:
       return null;

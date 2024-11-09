@@ -1,7 +1,6 @@
 import type {TextProps} from './Text.types';
 import styled from 'styled-components';
 import {getTextStyles} from './Text.utils';
-//import {mediaSize, mediaTablet} from '../../mixins/breakpoints';
 
 export const StyledText = styled.span<TextProps>`
   color: white;
